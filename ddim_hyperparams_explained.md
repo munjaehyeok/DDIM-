@@ -10,9 +10,8 @@ dataset_name = "oxford_flowers102"
 ```python
 dataset_repetitions = 5
 ```
-- 하나의 epoch 내에 데이터셋을 여러 번 반복 해석
-- 자극한 조건에서 효과적
-
+- 데이터셋을 학습에 더 많이 사용하기 위해 반복 횟수를 지정합니다.
+- 데이터셋이 상대적으로 작기 때문에, 한 epoch 내에서 여러 번 반복하여 효과적으로 더 많이 학습시키는 역할을 합니다.
 ```python
 num_epochs = 1
 ```
