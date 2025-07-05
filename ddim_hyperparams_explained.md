@@ -29,18 +29,19 @@ image_size = 64
 ```python
 kid_image_size = 75
 ```
-- InceptionNet 입력 이미지 크기
+- KID를 계산할 때 사용하는 InceptionNet 입력 이미지 크기입니다.
+- 일반적으로 Inception은 75x75 이상 이미지를 사용하므로 75로 지정.
 
 ```python
 kid_diffusion_steps = 5
 ```
-- KID 곀산 시 사용하는 reverse diffusion 스텝 개수
-- 낮을수록 빠른 곀산, 하지만 정확도 낮음
+- KID 평가를 위해 **reverse diffusion(샘플링)**을 할 때 몇 step만 사용할지 지정합니다.
+- 낮을수록 빠르지만 정확도 낮고, 높을수록 평가 품질 높아짐.
 
 ```python
 plot_diffusion_steps = 20
 ```
-- 시각화 원하지 중간 이미지 개수
+- 시각화를 위해 샘플링 과정에서 몇 개의 중간 이미지를 그릴지 결정합니다.
 
 ## 사크 값
 
